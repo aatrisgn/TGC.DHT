@@ -1,0 +1,29 @@
+@TGC.DHT.Api_HostAddress = https://localhost:32772
+@TGC.DHT.pi.Api_HostAddress = http://10.95.140.112:8080
+
+
+GET {{TGC.DHT.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{TGC.DHT.Api_HostAddress}}//Humidity
+Accept: application/json 
+
+{
+    "humidity": 30,
+    "room": "living room"
+}
+
+###
+
+POST http://10.95.140.112:8080/humidity
+Accept: application/json
+Content-Type: application/json
+
+{
+    "humidity": 30,
+    "room": "living room"
+}
+
+###

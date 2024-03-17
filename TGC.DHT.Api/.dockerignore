@@ -1,0 +1,3 @@
+# Don't push environment-specific appsettings files in 
+# the Docker image
+*/appsettings.*.json
